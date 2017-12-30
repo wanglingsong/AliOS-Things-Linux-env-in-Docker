@@ -1,7 +1,7 @@
 # How to build your AliOS-Things app from a Linux docker
 
 * Download the Dockerfile in this repo
-* Build docker image
+* Build Docker image
 ```
 docker build -t myaos .
 ```
@@ -9,7 +9,7 @@ docker build -t myaos .
 ```
 docker run -i -t -v [path-to-your-aos-source-directory]:/opt/aos myaos /bin/bash
 ```
-* Start building inside docker
+* Start building inside Docker
 ```
 aos make helloworld@linuxhost
 ```
