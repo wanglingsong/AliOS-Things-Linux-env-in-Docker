@@ -5,11 +5,7 @@
 ```
 docker build -t myaos .
 ```
-* Run the image in interative mode with your AOS directory mounted to /opt/aos
+* Run the image and build aos with your AOS directory mounted to /opt/aos
 ```
-docker run -i -t -v [path-to-your-aos-source-directory]:/opt/aos myaos /bin/bash
-```
-* Start building inside Docker
-```
-aos make helloworld@linuxhost
+docker run --rm -v [path-to-your-aos-source-directory]:/opt/aos myaos aos make iotlink@linuxhost
 ```
