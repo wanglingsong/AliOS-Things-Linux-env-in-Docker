@@ -7,5 +7,5 @@ docker build -t myaos .
 ```
 * Run the image and build aos with your AOS directory mounted to /opt/aos
 ```
-docker run --rm -v [path-to-your-aos-source-directory]:/opt/aos myaos aos make iotlink@linuxhost
+docker run --rm -v [path-to-your-aos-source-directory]:/opt/aos myaos aos make helloworld@linuxhost
 ```
